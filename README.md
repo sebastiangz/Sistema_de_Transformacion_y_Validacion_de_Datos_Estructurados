@@ -11,7 +11,7 @@ Sistema funcional para transformar, validar y sanitizar datos estructurados medi
 
 ---
 
-## 🎯 Objetivos de Aprendizaje
+## 🎯 Objetivos
 
 - Implementar **schemas funcionales** para validación de datos
 - Desarrollar **transformadores composables** inmutables
