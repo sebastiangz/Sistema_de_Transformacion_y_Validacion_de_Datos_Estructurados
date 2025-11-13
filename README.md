@@ -315,9 +315,9 @@ pytest --cov=src tests/
 
 ## 👥 Autor
 
-**Nombre**: [Tu Nombre]  
-**Email**: [tu-email@ucol.mx]  
-**GitHub**: [@tu-usuario](https://github.com/tu-usuario)
+**Nombre**: [Christian Alexis]  
+**Email**: [clugo1@ucol.mx]  
+**GitHub**: [@Alexis1102lr06](https://github.com/Alexis1102lr06)
 
 ---
 
