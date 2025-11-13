@@ -316,6 +316,7 @@ pytest --cov=src tests/
 ## 👥 Autor
 
 **Nombre**: [Christian Alexis]  
+**Nombre**: [Alexis]  
 **Email**: [clugo1@ucol.mx]  
 **GitHub**: [@Alexis1102lr06](https://github.com/Alexis1102lr06)
 
