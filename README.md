@@ -318,9 +318,11 @@ pytest --cov=src tests/
 **Nombre**: [Alexis]  
 **Email**: [clugo1@ucol.mx]  
 **GitHub**: [@Alexis1102lr06](https://github.com/Alexis1102lr06)
+
 **Nombre**: [Joseph]  
 **Email**: [jllerenas8@ucol.mx]  
 **GitHub**: [@josephllerenas8-eng](https://github.com/josephllerenas8-eng)
+
 **Nombre**: [Adrian]  
 **Email**: [adrianriverarebolledo@gmail.com]  
 **GitHub**: [@adrianRR15](https://github.com/adrianRR15)
