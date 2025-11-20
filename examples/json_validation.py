@@ -9,7 +9,6 @@ from typing import List, Dict
 from returns.result import Success, Failure
 from src.validation import validate_transaction
 
-
 def load_json(path: str) -> List[Dict]:
     """
     Carga un archivo JSON que contiene una lista de transacciones.
@@ -22,7 +21,6 @@ def load_json(path: str) -> List[Dict]:
     """
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
-
 
 def validate_json_transactions(path: str) -> Dict[str, List]:
     """

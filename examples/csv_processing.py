@@ -10,7 +10,6 @@ from returns.result import Success, Failure
 from src.transforms import transform_transaction
 from src.validation import validate_transaction
 
-
 def load_csv(path: str) -> List[Dict]:
     """
     Carga un archivo CSV y devuelve una lista de diccionarios.
@@ -24,7 +23,6 @@ def load_csv(path: str) -> List[Dict]:
     with open(path, "r", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         return list(reader)
-
 
 def process_csv_transactions(path: str) -> Dict[str, List]:
     """

@@ -10,7 +10,6 @@ from returns.result import Success, Failure
 from src.validation import validate_transaction
 from src.transforms import transform_transaction
 
-
 def validate_api_payload(payload: Dict[str, Any]) -> Dict[str, Any]:
     """
     Valida un payload de transacción recibido por API.
@@ -29,5 +28,3 @@ def validate_api_payload(payload: Dict[str, Any]) -> Dict[str, Any]:
         return {"status": "success", "data": result.unwrap()}
     else:
         return {"status": "failure", "error": result.failure()}
-
-
