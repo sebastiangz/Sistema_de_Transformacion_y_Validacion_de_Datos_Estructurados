@@ -6,7 +6,7 @@ Carga y procesa transacciones desde un archivo CSV usando transforms y validatio
 
 import csv
 from typing import List, Dict
-from returns.result import Success, Failure
+from returns.result import Success
 from src.transforms import transform_transaction
 from src.validation import validate_transaction
 
@@ -39,10 +39,7 @@ def process_csv_transactions(path: str) -> Dict[str, List]:
     errors: List[str] = []
 
     for tx in transactions:
-        # Aplica transformaciones
         transformed = transform_transaction(tx)
-
-        # Valida la transacción
         result = validate_transaction(transformed)
         if isinstance(result, Success):
             valid.append(result.unwrap())

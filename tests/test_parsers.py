@@ -4,15 +4,12 @@ tests/test_parsers.py
 Pruebas unitarias para el módulo parsers.py
 """
 
-import pytest
 from returns.result import Success, Failure
-from src.parsers import Parser, char, digit
+from src.parsers import char, digit
 
 
 def test_char_success():
-    """
-    Verifica que char consume correctamente el carácter esperado.
-    """
+    """Verifica que char consume correctamente el carácter esperado."""
     parser = char('A')
     result = parser("ABC")
     assert isinstance(result, Success)
@@ -22,9 +19,7 @@ def test_char_success():
 
 
 def test_char_failure():
-    """
-    Verifica que char falla si el carácter no coincide.
-    """
+    """Verifica que char falla si el carácter no coincide."""
     parser = char('X')
     result = parser("ABC")
     assert isinstance(result, Failure)
@@ -32,9 +27,7 @@ def test_char_failure():
 
 
 def test_digit_success():
-    """
-    Verifica que digit consume correctamente un dígito.
-    """
+    """Verifica que digit consume correctamente un dígito."""
     parser = digit()
     result = parser("9abc")
     assert isinstance(result, Success)
@@ -44,9 +37,7 @@ def test_digit_success():
 
 
 def test_digit_failure():
-    """
-    Verifica que digit falla si el primer carácter no es un dígito.
-    """
+    """Verifica que digit falla si el primer carácter no es un dígito."""
     parser = digit()
     result = parser("abc")
     assert isinstance(result, Failure)
@@ -54,9 +45,7 @@ def test_digit_failure():
 
 
 def test_parser_map_success():
-    """
-    Verifica que map transforma el resultado exitoso.
-    """
+    """Verifica que map transforma el resultado exitoso."""
     parser = digit().map(int)
     result = parser("7xyz")
     assert isinstance(result, Success)
@@ -66,9 +55,7 @@ def test_parser_map_success():
 
 
 def test_parser_map_failure():
-    """
-    Verifica que map propaga el fallo si el parser falla.
-    """
+    """Verifica que map propaga el fallo si el parser falla."""
     parser = digit().map(int)
     result = parser("abc")
     assert isinstance(result, Failure)
