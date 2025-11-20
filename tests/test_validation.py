@@ -10,7 +10,7 @@ from src.validation import validate_transaction
 
 def test_validate_transaction_missing_fields():
     """Verifica que devuelve Failure si faltan campos obligatorios."""
-    d = {}  # Dict vacío para forzar error
+    d = {}
     schema = {
         "Merchant_Country": lambda _: Success("ok"),
         "Channel": lambda _: Success("ok"),

@@ -4,7 +4,6 @@ tests/test_transforms.py
 Pruebas unitarias para el módulo transforms.py
 """
 
-import pytest
 from src import transforms
 
 
