@@ -1,0 +1,11 @@
+# Core dependencies
+returns==0.22.0   # Manejo funcional de Success/Failure
+fastapi==0.115.0  # Framework para exponer validación vía API
+uvicorn==0.32.0   # Servidor ASGI para correr FastAPI
+
+# Utilidades
+pydantic==2.9.0   # Validación de modelos en API
+python-dateutil==2.9.0.post0  # Manejo avanzado de fechas
+
+# Testing
+pytest==8.3.3     # Framework de pruebas unitarias
