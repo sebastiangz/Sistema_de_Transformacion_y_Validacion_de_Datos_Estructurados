@@ -16,12 +16,12 @@ def main():
     src_path = os.path.join(project_root, "src")
     sys.path.insert(0, src_path)
 
-    print("🔍 Ejecutando tests con pytest...\n")
+    print(" Ejecutando tests con pytest...\n")
     try:
         subprocess.run(["pytest"], cwd=project_root, check=True)
-        print("\n✅ Todos los tests pasaron correctamente.")
+        print("\n Todos los tests pasaron correctamente.")
     except subprocess.CalledProcessError:
-        print("\n❌ Algunos tests fallaron. Revisa los errores arriba.")
+        print("\n Algunos tests fallaron. Revisa los errores arriba.")
 
 if __name__ == "__main__":
     main()
