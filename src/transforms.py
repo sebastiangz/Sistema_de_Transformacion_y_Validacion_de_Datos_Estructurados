@@ -1,6 +1,11 @@
+"""
+Este módulo contiene funciones para transformar datos de transacciones,
+incluyendo normalización de país, enriquecimiento de canal, y marca de tiempo.
+"""
+
 # src/transforms.py
 
-from datetime import datetime
+from datetime import datetime, UTC
 
 def normalize_country(d: dict) -> dict:
     """
@@ -51,7 +56,7 @@ def enrich_channel(d: dict) -> dict:
 
 def add_timestamp(d: dict) -> dict:
     """
-    Agrega el campo 'Processed_At' con la fecha y hora actual en formato ISO.
+    Agrega el campo 'Processed_At' con la fecha y hora actual en formato ISO (UTC).
 
     Args:
         d (dict): Diccionario con los datos de la transacción.
@@ -59,7 +64,7 @@ def add_timestamp(d: dict) -> dict:
     Returns:
         dict: Diccionario con la marca de tiempo agregada.
     """
-    d['Processed_At'] = datetime.utcnow().isoformat()
+    d['Processed_At'] = datetime.now(UTC).isoformat()
     return d
 
 def transform_transaction(d: dict) -> dict:

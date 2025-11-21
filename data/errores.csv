@@ -1,0 +1,2 @@
+row,error
+999,"Timestamp failed: Date must match one of: ['%m/%d/%Y %H:%M', '%d/%m/%Y %H:%M', '%m/%d/%Y %H:%M:%S', '%d/%m/%Y %H:%M:%S']"
