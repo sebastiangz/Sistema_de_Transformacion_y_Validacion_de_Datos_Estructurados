@@ -327,6 +327,8 @@ pytest --cov=src tests/
 **Email**: [adrianriverarebolledo@gmail.com]  
 **GitHub**: [@adrianRR15](https://github.com/adrianRR15)
 
+Link del video: https://youtu.be/cF8wRCYz7Tg?si=IOxHbq8d-PS30iyg
+
 
 ---
 
