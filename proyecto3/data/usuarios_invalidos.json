@@ -1,0 +1,4 @@
+[
+  {"name": "Juan", "email": "correo-invalido", "age": 16},
+  {"name": "", "age": 30}
+]
