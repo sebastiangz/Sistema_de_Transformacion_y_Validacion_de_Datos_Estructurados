@@ -315,12 +315,12 @@ pytest --cov=src tests/
 
 ## 👥 Autor
 
-**Nombre**: [Alexis]  
-**Email**: [clugo1@ucol.mx]  
+**Nombre**: [Aron Ulises Gutierrez Cardenas]  
+**Email**: [aguatierrez121@ucol.mx]  
 **GitHub**: [@Alexis1102lr06](https://github.com/Alexis1102lr06)
 
-**Nombre**: [Joseph]  
-**Email**: [jllerenas8@ucol.mx]  
+**Nombre**: [Diego Francisco Vazquez Casillas]  
+**Email**: [dvazquez51@ucol.mx]  
 **GitHub**: [@josephllerenas8-eng](https://github.com/josephllerenas8-eng)
 
 **Nombre**: [Adrian]  
