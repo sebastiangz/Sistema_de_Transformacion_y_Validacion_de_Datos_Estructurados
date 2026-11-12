@@ -9,3 +9,7 @@ def sanitize_input(data):
     if isinstance(data, list):
         return [sanitize_input(value) for value in data]
     return sanitize_text(data)
+def normalize_email(email):
+    if not isinstance(email, str):
+        return email
+    return email.strip().lower()
