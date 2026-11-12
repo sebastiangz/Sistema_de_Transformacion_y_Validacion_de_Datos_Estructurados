@@ -1,7 +1,20 @@
+
 # Proyecto 3: Sistema de Transformación y Validación de Datos Estructurados
 
 **Materia:** Programación Funcional  
 **Proyecto académico:** ejemplo original inspirado en los requisitos proporcionados.
+Responsabilidad individual – Aron Ulises
+
+Área: Limpieza y transformación de datos.
+
+Me encargaré de implementar y mejorar funciones puras para limpiar y transformar información, eliminar espacios innecesarios, normalizar nombres y aplicar composición de funciones.
+
+También realizaré pruebas para comprobar que las transformaciones funcionen correctamente.
+
+Archivos a mi cargo:
+
+- "src/transforms.py"
+- "src/sanitizers.py"
 
 ## Objetivo
 Validar, limpiar y transformar registros estructurados JSON, CSV y XML mediante funciones puras, composición, resultados tipo Either (Success/Failure), valores tipo Maybe (Some/Nothing), combinadores de parsers y un pipeline estilo railway-oriented.
