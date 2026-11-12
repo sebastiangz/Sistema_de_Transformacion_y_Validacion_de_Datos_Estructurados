@@ -1,4 +1,4 @@
-# 🔄 Proyecto 3: Sistema de Transformación y Validación de Datos Estructurados   - Test de grabado25
+# 🔄 Proyecto 3: Sistema de Transformación y Validación de Datos Estructurados  26
 
 ## 📋 Descripción del Proyecto
 
@@ -7,8 +7,20 @@ Sistema funcional para transformar, validar y sanitizar datos estructurados medi
 **Universidad de Colima - Ingeniería en Computación Inteligente**  
 **Materia**: Programación Funcional  
 **Profesor**: Gonzalez Zepeda Sebastian  
-**Semestre**: Agosto 2025 - Enero 2026
+**Semestre**: noviembre 2026 - Enero 2027
 
+## Mejoras realizadas por el equipo
+
+Se realizaron modificaciones al sistema original
+para mejorar el procesamiento de datos estructurados.
+
+### Mejoras implementadas
+
+- Normalización de correos electrónicos.
+- Integración de nuevas funciones al pipeline.
+- Limpieza de espacios innecesarios.
+- Conversión de correos a minúsculas.
+- Actualización de la documentación.
 ---
 
 ## 🎯 Objetivos
@@ -312,11 +324,51 @@ pytest --cov=src tests/
 - **Documentación (10%)**: API clara, ejemplos útiles
 
 ---
+Aportación Individual - Aron Ulises
+
+Normalización de correos electrónicos
+
+Descripción:
+
+Mi aportación al Proyecto 3 consistió en implementar la normalización de correos electrónicos dentro del sistema de transformación y validación de datos estructurados.
+
+Archivos modificados
+
+- "src/sanitizers.py"
+- "src/pipeline.py"
+
+Funciones implementadas
+
+1. normalize_email():
+
+Esta función elimina los espacios innecesarios al inicio y al final de un correo electrónico y convierte las letras mayúsculas a minúsculas.
+
+2. normalize_user_email():
+
+Esta función permite aplicar la normalización al correo electrónico de un usuario sin modificar directamente los datos originales.
+
+Ejemplo de funcionamiento
+
+Entrada:
+
+""  ARON@GMAIL.COM  ""
+
+Salida:
+
+""aron@gmail.com""
+
+Integración al sistema
+
+Se agregó la normalización de correos electrónicos al pipeline de procesamiento, después de la limpieza de datos y antes de la validación.
+
+Conclusión
+
+Con esta aportación se busca mejorar la calidad y consistencia de los datos, aplicando principios de programación funcional como las funciones puras y la inmutabilidad.
 
 ## 👥 Autor
 
 **Nombre**: [Aron Ulises Gutierrez Cardenas]  
-**Email**: [aguatierrez121@ucol.mx]  
+**Email**: [agutierrez121@ucol.mx]  
 **GitHub**: [@Alexis1102lr06](https://github.com/Alexis1102lr06)
 
 **Nombre**: [Diego Francisco Vazquez Casillas]  
