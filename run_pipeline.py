@@ -4,17 +4,15 @@ Script para ejecutar el pipeline de sanitización, validación y visualización 
 
 from collections import Counter  # standard library
 
+import matplotlib.pyplot as plt
 import pandas as pd  # third-party
 from returns.result import Success  # third-party
-import matplotlib.pyplot as plt
-import seaborn as sns # type: ignore
+import seaborn as sns  # type: ignore
 
 from src.sanitizers import sanitize_input  # first-party
-from src.validation import validate_transaction  # first-party
-
-from src.sanitizers import sanitize_input  # first-party
-from src.validation import validate_transaction  # first-party
 from src.transforms import capitalizar_nombre  # first-party
+from src.validation import validate_transaction, validar_nombre  # first-party
+
 
 def main():
     """Lee el CSV, aplica sanitización y validación,
@@ -28,7 +26,11 @@ def main():
     for idx, row in df.iterrows():
         data = row.to_dict()
         s = sanitize_input(data)
-        v = validate_transaction(s).map(capitalizar_nombre)
+        v = (
+            validate_transaction(s)
+            .bind(validar_nombre)
+            .map(capitalizar_nombre)
+        )
 
         if isinstance(v, Success):
             processed_rows.append(v.unwrap())
@@ -76,7 +78,8 @@ def main():
         sns.countplot(
             data=df_validas,
             x="Merchant_Country",
-            order=df_validas["Merchant_Country"].value_counts().index)
+            order=df_validas["Merchant_Country"].value_counts().index,
+        )
         plt.title("Transacciones por país")
         plt.xticks(rotation=45)
         plt.tight_layout()
