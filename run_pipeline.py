@@ -12,6 +12,9 @@ import seaborn as sns # type: ignore
 from src.sanitizers import sanitize_input  # first-party
 from src.validation import validate_transaction  # first-party
 
+from src.sanitizers import sanitize_input  # first-party
+from src.validation import validate_transaction  # first-party
+from src.transforms import capitalizar_nombre  # first-party
 
 def main():
     """Lee el CSV, aplica sanitización y validación,
@@ -25,7 +28,7 @@ def main():
     for idx, row in df.iterrows():
         data = row.to_dict()
         s = sanitize_input(data)
-        v = validate_transaction(s)
+        v = validate_transaction(s).map(capitalizar_nombre)
 
         if isinstance(v, Success):
             processed_rows.append(v.unwrap())

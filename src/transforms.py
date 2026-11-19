@@ -82,3 +82,8 @@ def transform_transaction(d: dict) -> dict:
             normalize_country(d)
         )
     )
+
+def capitalizar_nombre(data):
+    if "name" in data and isinstance(data["name"], str):
+        return {**data, "name": data["name"].title()}
+    return {**data}
