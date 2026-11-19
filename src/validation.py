@@ -6,8 +6,9 @@ Utiliza validadores que devuelven Success o Failure usando returns.result.
 """
 
 from typing import Optional, Dict, Any
-from returns.result import Success, Failure
+from returns.result import Result, Success, Failure
 from src.schemas import transaction_schema
+
 
 def validate_transaction(d: Dict[str, Any], schema: Optional[Dict[str, Any]] = None):
     """
@@ -33,3 +34,14 @@ def validate_transaction(d: Dict[str, Any], schema: Optional[Dict[str, Any]] = N
         if isinstance(result, Failure):
             return Failure(f"{k} failed: {result.failure()}")
     return Success(d)
+
+
+def validar_nombre(data: Dict[str, Any]) -> Result[Dict[str, Any], str]:
+    """
+    Función pura que valida que el campo de nombre no esté vacío
+    sin mutar el diccionario original.
+    """
+    nombre = data.get("name", data.get("Name", ""))
+    if not isinstance(nombre, str) or not nombre.strip():
+        return Failure("El nombre no puede estar vacío")
+    return Success(data)
