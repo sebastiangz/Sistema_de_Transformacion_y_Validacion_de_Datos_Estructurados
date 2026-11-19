@@ -375,8 +375,8 @@ Con esta aportación se busca mejorar la calidad y consistencia de los datos, ap
 **Email**: [dvazquez51@ucol.mx]  
 **GitHub**: [@josephllerenas8-eng](https://github.com/josephllerenas8-eng)
 
-**Nombre**: [Adrian]  
-**Email**: [adrianriverarebolledo@gmail.com]  
+**Nombre**: [Brian Neftali Vaca Guzman]  
+**Email**: [bvaca0@ucol.mx]  
 **GitHub**: [@adrianRR15](https://github.com/adrianRR15)
 
 Link del video: https://youtu.be/cF8wRCYz7Tg?si=IOxHbq8d-PS30iyg
