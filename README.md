@@ -379,7 +379,7 @@ Con esta aportación se busca mejorar la calidad y consistencia de los datos, ap
 **Email**: [bvaca0@ucol.mx]  
 **GitHub**: [@adrianRR15](https://github.com/adrianRR15)
 
-Link del video: https://youtu.be/cF8wRCYz7Tg?si=IOxHbq8d-PS30iyg
+Link del video: https://drive.google.com/file/d/1B_G7lRZQLxYh_dh5bSpvRwMVUg4VSase/view?usp=drivesdk
 
 
 ---
